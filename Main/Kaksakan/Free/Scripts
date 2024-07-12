@@ -1,0 +1,230 @@
+if game.GameId == 7239319209 then
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+
+local Window = Library.CreateLib("Kak.Hub Ohio Script", "DarkTheme")
+
+local Tab = Window:NewTab("Main")
+local Section = Tab:NewSection("Main")
+
+Section:NewToggle("ATM Auto Farm", "Click to start ATM Auto Farm", function(state)
+    if state then
+        game:GetService("StarterGui"):SetCore("SendNotification", { 
+        Title = "Farm Has Been Started";
+        Text  = "";
+        Icon  = "rbxthumb://type=Asset&id=17328930447&w=150&h=150"})
+    Duration = 10;
+
+    while true do
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1042.81458, 6.76124382, -372.713165, 0, 0, 1, 0, 1, -0, -1, 0, 0) --ATM 1
+        wait(1.5)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1042.72705, 6.76040554, -382.725769, 4.86146964e-05, 2.74856284e-05, 1, 7.9586971e-06, 1, -2.74860158e-05, -1, 7.96003314e-06, 4.86144781e-05) --ATM 2
+        wait(1.5)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1028.36475, 6.76070213, -232.135208, 0, 0, 1, 0, 1, -0, -1, 0, 0) --ATM 3
+        wait(1.5)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1321.00366, 6.7618432, -286.989838, -1, 0, 0, 0, 1, 0, 0, 0, -1) --ATM 4
+        wait(1.5)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1645.6936, -38.6377602, -231.035431, 0, 0, -1, 0, 1, 0, 1, 0, 0) --ATM 5
+        wait(1.5)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1574.61377, 6.762743, -304.813477, 0, 0, 1, 0, 1, -0, -1, 0, 0) --ATM 6
+        wait(1.5)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1358.48401, 6.75092459, -361.65448, 1, 1.44480879e-07, 1.19682412e-07, -1.44481021e-07, 1, 1.19509946e-06, -1.19682241e-07, -1.19509946e-06, 1) --ATM 7
+        wait(1.5)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1348.51465, 6.76129103, -692.815613, -1, 0, 0, 0, 1, 0, 0, 0, -1) --ATM 8
+        wait(1.5)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1167.7981, 6.76124382, -783.308777, 1, 0, 0, 0, 1, 0, 0, 0, 1) --ATM 9 
+        wait(1.5)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(846.724609, 6.76270103, -1016.07855, -1, 0, 0, 0, 1, 0, 0, 0, -1) --ATM 10
+        wait(1.5)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(392.406464, -5.53225231, -480.850342, 0.173624337, -0, -0.984811902, 0, 1, -0, 0.984811902, 0, 0.173624337) --ATM 11
+        wait(1.5)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(396.488342, -5.53121948, -403.757874, -1.1920929e-07, -0, -1.00000012, 0, 1, -0, 1.00000012, 0, -1.1920929e-07) --ATM 12
+        wait(1.5)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(467.893494, -56.3022804, -263.194702, 0, 0, -1, 0, 1, 0, 1, 0, 0) --ATM 13
+        wait(1.5)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1003.08514, -26.5890217, -431.205444, 0, 0, 1, 0, 1, -0, -1, 0, 0) --ATM 14
+        wait(1.5)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(536.193054, -47.5890236, -400.529663, -0.642763734, 0, 0.766064942, 0, 1, 0, -0.766064942, 0, -0.642763734) --ATM 15
+        wait(1.5)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(602.589539, -56.3022804, -650.539001, -1, 0, 0, 0, 1, 0, 0, 0, -1) --ATM 16
+        wait(1.5)
+        
+        for i = 1, 10 do
+            print(i) -- Sayıyı yazdır
+            wait(1) -- 1 saniye bekle
+        end
+        
+        print("Restarting") -- "Restarting" yazısı
+    end
+    else
+        game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, game.JobId, game.Players.LocalPlayer)
+    end
+end)
+
+local Tab = Window:NewTab("Guns")
+    local Section = Tab:NewSection("Guns")
+
+    Section:NewButton("Tommy Gun", "Click to teleport to the Tommy Gun", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1132.87817, 3.39241028, -741.46106, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+    end)
+
+    Section:NewButton("M4A1", "Click to teleport to the M4A1", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(603.467651, 25.6628113, -922.04425, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+    end)
+
+    Section:NewButton("Scal L", "Click to teleport to the Scar L", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(792.502625, 78.1733093, -1207.22961, -0.939700961, 0, 0.341998369, 0, 1, 0, -0.341998369, 0, -0.939700961)
+    end)
+
+    Section:NewButton("M249 SAW", "Click to teleport to the M249 SAW", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(654.175781, 22.5020657, -1455.53662, -0.139203906, 0, -0.99026376, 0, 1, 0, 0.99026376, 0, -0.139203906)
+    end)
+
+    Section:NewButton("Glock 18", "Click to teleport to the Glock 18", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(565.558411, 22.5020657, -1484.61975, 0.17595309, 0, 0.984398544, 0, 1, 0, -0.984398544, 0, 0.17595309)
+    end)
+
+    Section:NewButton("Minigun", "Click to teleport to the Minigun", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(364.970764, -5.76497412, -1447.3302, -0.984812617, 0, -0.173621148, 0, 1, 0, 0.173621148, 0, -0.984812617)
+    end)
+
+    Section:NewButton("Gravity Gun", "Click to teleport to the Gravity Gun", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(395.828888, -5.42960501, -1447.86584, 0.173624337, -0, -0.984811902, 0, 1, -0, 0.984811902, 0, 0.173624337)
+    end)
+
+    Section:NewButton("AUG", "Click to teleport to the AUG", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1170.50024, 41.3713837, -772.558594, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+    end)
+
+    Section:NewButton("AS Val", "Click to teleport to the AS Val", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(674.248657, -19.3242188, -98.8528214, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+    end)
+
+    Section:NewButton("RPK", "Click to teleport to the RPK", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(674.248657, -19.3242188, -83.4528198, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+    end)
+
+    Section:NewButton("Saiga 12", "Click to teleport to the Saiga 12", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(674.248657, -19.3242188, -74.6528168, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+    end)
+
+    Section:NewButton("Dragunov", "Click to teleport to the Dragunov", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(674.248718, -19.3242149, -65.8528214, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+    end)
+
+    Section:NewButton("Acid Gun", "Click to teleport to the Acid Gun", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(143.376083, -69.3296127, -429.527252, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+    end)
+
+    Section:NewButton("RayGun", "Click to teleport to the RayGun", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(148.685471, -98.6296082, -529.280945, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+    end)
+
+    Section:NewButton("MP7", "Click to teleport to the MP7", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(622.397522, 38.7204475, -687.080994, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+    end)
+
+    Section:NewButton("Barrett M107", "Click to teleport to the Barrett M107", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(594.777954, 38.7267723, -694.020569, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+    end)
+
+    Section:NewButton("Deagle", "Click to teleport to the Deagle", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(363.341461, 26.0798492, -259.681396, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+    end)
+
+    Section:NewButton("Python", "Click to teleport to the Python", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1512.12, 20.5827942, 38.1203537, 0.342042685, -0, -0.939684391, 0, 1, -0, 0.939684391, 0, 0.342042685)
+    end)
+
+    Section:NewButton("RPG", "Click to teleport to the RPG", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1143.73682, 22.5080891, -1322.30591, -0.173624277, 0, -0.984811902, 0, 1, 0, 0.984811902, 0, -0.173624277)
+    end)
+
+    local Tab = Window:NewTab("Teleporters")
+    local Section = Tab:NewSection("Teleporters")
+
+    Section:NewButton("Police Station", "Click to teleport to the Police Station", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(715.064636, 5.04490185, -914.019714, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+    end)
+
+    Section:NewButton("Bank", "Click to teleport to the Bank", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1074.88184, 5.18038893, -426.472839, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+    end)
+
+    Section:NewButton("Military", "Click to teleport to the Military", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(775.086182, 23.3899441, -1415.78711, 0.193362951, 0.968332767, 0.157931581, 0.980648875, -0.195774496, -0.000293188612, 0.0306350701, 0.154932126, -0.987450004)
+    end)
+
+    Section:NewButton("Hospital", "Click to teleport to the Hospital", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1126.38477, 5.56904602, -942.149475, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+    end)
+
+    Section:NewButton("Jewelry ", "Click to teleport to the Jewelry", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1545.33191, 5.42184448, -689.891541, 0.15644598, -0, -0.987686574, 0, 1, -0, 0.987686574, 0, 0.15644598)
+    end)
+
+    Section:NewButton("Armory 1 ", "Click to teleport to the Armory 1", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1566.9165, 17.9520607, -625.314819, 0.996191859, 0, 0.0871884301, 0, 1, 0, -0.0871884301, 0, 0.996191859)
+    end)
+
+    Section:NewButton("Armory 2", "Click to teleport to the Armory 2", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(661.911438, 17.9620762, -660.203552, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+    end)
+
+    Section:NewButton("Armory 3", "Click to teleport to the Armory 3", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1112.13293, 37.0241203, -1312.35815, 0.173624337, 0, 0.984811902, 0, 1, 0, -0.984811902, 0, 0.173624337)
+    end)
+
+    Section:NewButton("Black Market", "Click to teleport to the Black Market", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(656.035522, -15.1382027, -54.2182961, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+    end)
+
+    Section:NewButton("Acid Room", "Click to teleport to the Acid Room", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(226.218201, -69.4730682, -520.879517, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+    end)
+
+    local Tab = Window:NewTab("Settings")
+    local Section = Tab:NewSection("Settings")
+
+    Section:NewKeybind("On - Off Uİ", "KeybindInfo", Enum.KeyCode.F, function()
+        Library:ToggleUI()
+        print("Clicked")
+    end)
+
+    Section:NewButton("Mobile Keybord", "Use this if u are on MOBİLE", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+    end)
+
+    game:GetService("StarterGui"):SetCore("SendNotification", { 
+        Title = "By Kaksakan";
+        Text  = "Very Good";
+        Icon  = "rbxthumb://type=Asset&id=17730178070&w=150&h=150"})
+    Duration = 10;
+
+    game:GetService("StarterGui"):SetCore("SendNotification", { 
+        Title = "Youtube";
+        Text  = "Kaksakan_Roblox";
+        Icon  = "rbxthumb://type=Asset&id=17328930447&w=150&h=150"})
+    Duration = 10;
+
+    local Tab = Window:NewTab("Credits")
+    local Section = Tab:NewSection("Credits")
+
+    Section:NewLabel("Made By Kaksakan")
+    Section:NewLabel("This Uİ is free = KavoUİ")
+
+    Section:NewButton("My Discord", "Click to copy my Discord server link", function()
+        setclipboard("https://discord.gg/tNf6Fsvk")
+        game:GetService("StarterGui"):SetCore("SendNotification", { 
+            Title = "Copyed to the your ClipBoard";
+            Text  = "Go past the link to a browser";
+            Icon  = "rbxthumb://type=Asset&id=17328930447&w=150&h=150"})
+        Duration = 10;
+    end)
+
+else
+    game:GetService("StarterGui"):SetCore("SendNotification",{
+        Title = "Ohio Script",
+        Text = "Please join the Ohio"
+    })
+end
